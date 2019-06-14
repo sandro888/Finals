@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }))
 app.get('/', (req, res) => {
     res.render('index', {})
 })
-app.get('/todo', (req, res) => {
-    res.render('todo', {  })
+app.get('/weather', (req, res) => {
+    res.render('weather', {  })
 })
 app.get('/aboutus', (req, res) => {
     res.render('aboutus', {  })
