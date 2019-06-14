@@ -1,0 +1,32 @@
+html
+  head
+    meta(charset='UTF-8')
+    title Weather Application
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    script(src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js')
+   
+    style
+      include weather.css
+  body
+    a#head-btn(href='/')
+     h2 Travelo 
+     p Worlds Best Travel Agency
+    .container
+      header.header
+        .search
+          input#search-txt(type='text', placeholder='Enter City Name')
+          a#search-btn(href='#')
+            i.fas.fa-search
+      main#main
+        .city-icon
+          .city-icon-holder
+            #city-name
+            img#icon(src='', alt='')
+        .temperature
+          #temp 
+        .humidity
+          #humidity-div
+    
+     
+    script(src='https://use.fontawesome.com/releases/v5.0.13/js/all.js')
+    script(src='/main.js')

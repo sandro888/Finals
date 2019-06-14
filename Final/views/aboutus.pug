@@ -1,0 +1,156 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title About US
+    style 
+        include abouus.css
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css', integrity='sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu', crossorigin='anonymous')
+  body.position-relative(data-spy='scroll', data-target='#navbar', data-offset='72')
+    header.fixed-top.page-header
+      .container-fluid.container-fluid-max
+        nav#navbar.navbar.navbar-expand-lg.navbar-dark
+          a.navbar-brand(href='/') Travelo
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarNav.collapse.navbar-collapse.justify-content-lg-between
+            ul.navbar-nav
+              li.nav-item
+                a.nav-link(href='#popular-destinations') Popular Destinations
+              li.nav-item
+                a.btn(href='http://localhost:4000/todo/', title='Register / Log In' class="weather") Check Weather
+    main
+      section#home.d-flex.align-items-center.position-relative.vh-100.cover.hero(style='background-image:url(https://i.ibb.co/LS0wkjD/Athena.jpg);')
+        .container-fluid.container-fluid-max
+          .row
+            .col-12.col-md-8.col-lg-6.col-xl-5
+              h1.text-white Find the best place for your vacation!
+      section#process.process
+        h2 About US
+        p.about-us(style='    ')
+          | Founded in 2008, Travelo exists to create a world where anyone can belong anywhere, providing healthy travel
+          | that
+          | is local, authentic, diverse, inclusive and sustainable. Travelo uniquely leverages technology to economically
+          | empower millions of people around the world to unlock and monetize their spaces, passions and talents to become
+          | hospitality entrepreneurs. Travelo’s accommodation marketplace provides access to 6+ million unique places to
+          | stay in nearly 100,000 cities and 191 countries. With Experiences, Travelo offers unprecedented access to local
+          | communities and interests through 30,000+ unique, handcrafted activities run by hosts across 1,000+ markets
+          | around the world. Travelo’s people-to-people platform benefits all its stakeholders, including hosts, guests,
+          | employees and the communities in which it operates.
+      section#popular-destinations.popular-destinations.py-5
+        .container-fluid.container-fluid-max
+          .row
+            .col-12
+              h2.pb-3.text-blue Popular Destinations
+            .col-12.col-sm-6.col-md-4
+              a.text-white(href='')
+                figure.position-relative.overflow-hidden
+                  img.img-fluid(src='https://i.ibb.co/Xskb556/NewYork.jpg', alt='New York')
+                  figcaption.d-flex.align-items-center.justify-content-center.position-absolute
+                    h3 New York
+            .col-12.col-sm-6.col-md-4
+              a.text-white(href='')
+                figure.position-relative.overflow-hidden
+                  img.img-fluid(src='https://i.ibb.co/vHds76K/Vienna.jpg', alt='Vienna')
+                  figcaption.d-flex.align-items-center.justify-content-center.position-absolute
+                    h3 Vienna
+            .col-12.col-sm-6.col-md-4
+              a.text-white(href='')
+                figure.position-relative.overflow-hidden
+                  img.img-fluid(src='https://i.ibb.co/dGSWH7g/dubai.jpg', alt='Dubai')
+                  figcaption.d-flex.align-items-center.justify-content-center.position-absolute
+                    h3 Dubai
+            .col-12.col-sm-6
+              a.text-white(href='')
+                figure.position-relative.overflow-hidden
+                  img.img-fluid(src='https://i.ibb.co/z2QCs18/Edinburgh.jpg', alt='Edinburgh')
+                  figcaption.d-flex.align-items-center.justify-content-center.position-absolute
+                    h3 Edinburgh
+            .col-12.col-sm-6
+              a.text-white(href='')
+                figure.position-relative.overflow-hidden
+                  img.img-fluid(src='https://i.ibb.co/Wp0TdZw/paris.jpg', alt='Paris')
+                  figcaption.d-flex.align-items-center.justify-content-center.position-absolute
+                    h3 Paris
+          .row
+            .col.text-center
+              a.btn.bg-blue.text-white(href='', role='button') More Destinations
+      section#featured-destinations.featured-destinations.bg-lightblue
+        .swiper-container
+          .parallax-bg(style='background-image:url(http://lorempixel.com/900/600/nightlife/2/)', data-swiper-parallax='-23%')
+          .swiper-wrapper
+            .swiper-slide.london
+              .title(data-swiper-parallax='-300') London
+              .subtitle(data-swiper-parallax='-200')
+              .text(data-swiper-parallax='-100')
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                  | felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer
+                  | laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis
+                  | rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero.
+                  | Aenean feugiat non eros quis feugiat.
+            .swiper-slide.tokyo
+              .title(data-swiper-parallax='-300', data-swiper-parallax-opacity='0') Tokyo
+              .subtitle(data-swiper-parallax='-200')
+              .text(data-swiper-parallax='-100')
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                  | felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer
+                  | laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis
+                  | rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero.
+                  | Aenean feugiat non eros quis feugiat.
+            .swiper-slide.rome
+              .title(data-swiper-parallax='-300') Rome
+              .subtitle(data-swiper-parallax='-200')
+              .text(data-swiper-parallax='-100')
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                  | felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer
+                  | laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis
+                  | rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero.
+                  | Aenean feugiat non eros quis feugiat.
+          .swiper-pagination.swiper-pagination-white
+          .swiper-button-prev.swiper-button-white
+          .swiper-button-next.swiper-button-white
+      section#contact-us.py-5.contact.bg-lightblue
+        .container-fluid.container-fluid-max
+          .row.justify-content-center
+            .col-12.col-md-auto.py-3.text-center
+              h2.mb-0.text-blue Ready for your next trip?
+              p.mb-0.h4.text-blue.font-weight-normal Get in touch today!
+    footer.py-5.page-footer
+      .container-fluid.container-fluid-max
+        .row
+          .col-12.col-md-6.footer-child.copyright
+            | Booking © 2019 All Rights Reserved
+          .col-12.col-md-6.footer-child.footer-links
+            a.mr-3(href='') Privacy Policy
+            a(href='') FAQ
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://code.jquery.com/jquery-1.12.4.min.js', integrity='sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ', crossorigin='anonymous')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+    script(src='../dist/js/swiper.min.js')
+    script.
+      var swiper = new Swiper('.swiper-container', {
+      speed: 600,
+      parallax: true,
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      },
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+      });
+    script.
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js', integrity='sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd', crossorigin='anonymous')

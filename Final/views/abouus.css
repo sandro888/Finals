@@ -1,0 +1,244 @@
+:root {
+    --lightblue: #F0F4FA;
+    --blue: #5588ff;
+}
+
+a,
+a:hover {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-lightblue {
+    background: var(--lightblue);
+}
+
+.bg-blue {
+    background: var(--blue);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.container-fluid-max {
+    max-width: 1440px;
+}
+
+.cover {
+    background: no-repeat center/cover;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+/* SCROLL ANIMATIONS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.scroll .page-header {
+    background: #9dc88f
+}
+
+.scroll .hero {
+    transform: scale(0.98);
+}
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.page-header .navbar {
+    padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+    border-color: var(--white);
+}
+
+.hero {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero .container-fluid {
+    z-index: 10;
+}
+
+.popular-destinations figure {
+    margin-bottom: 30px;
+}
+
+.popular-destinations figcaption {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.popular-destinations img {
+    filter: grayscale(100%) blur(3px);
+    transition: transform 0.5s, filter 0.75s;
+}
+
+.popular-destinations a:hover img {
+    transform: scale(1.25);
+    filter: none;
+}
+
+.page-footer .footer-links {
+    text-align: right;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    margin-top: 100px
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+    text-align: left
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+    text-align: left
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+    text-align: left
+}
+
+.weather {
+    border: 1px solid lightgray !important;
+    border-radius: 0px !important;
+    color: white !important;
+    padding: 10px !important;
+    margin-top: 5px !important;
+    margin-left: 10px !important;
+}
+
+.weather:hover {
+    background: #d73851;
+    border: 1px solid #d73851 !important;
+}
+
+.london {
+    background-image: url('https://images.unsplash.com/photo-1508710985089-e985fabbb184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80');
+    background-size: cover;
+    background-position-y: -190px
+}
+
+.tokyo {
+    background-image: url('https://images.unsplash.com/Ys-DBJeX0nE.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position-y: -390px
+}
+
+.rome {
+    background-image: url('https://images.unsplash.com/photo-1542820229-081e0c12af0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80');
+    background-size: cover;
+    background-position-y: -490px
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.about-us {
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .page-header {
+        background: #a6c9dc
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+        text-align: center;
+    }
+
+    .navbar-nav>li>a {
+        padding: 0px
+    }
+
+    .about-us {
+        height: 350px;
+    }
+
+    .navbar-brand {
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-us {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-us {
+        height: 550px;
+    }
+}

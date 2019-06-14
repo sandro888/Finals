@@ -1,0 +1,48 @@
+.delete {
+    border: none;
+    border-radius: 20px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    margin-left: 20px;
+}
+
+ul {
+    margin-right: 30px;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#hide-completed {
+    margin-top: 30px;
+}
+
+.paragraph {
+    cursor: pointer;
+}
+
+#open {
+    cursor: pointer;
+    outline: none
+}
+
+.add {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: blue;
+    color: white;
+    padding: 4px 6px 4px 6px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none
+}

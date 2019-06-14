@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige
+
+}
+.link{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-size: 17px;
+    border-radius: 20px;
+    background-color: #3d48ca;
+    padding: 5px 15px 5px 15px;
+}
+.link:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    transition: all ease-in .3s
+}
