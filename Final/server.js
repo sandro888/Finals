@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
 app.get('/weather', (req, res) => {
     res.render('weather', {  })
 })
+app.get('/flights', (req, res) => {
+    res.render('flights', {  })
+})
 app.get('/aboutus', (req, res) => {
     res.render('aboutus', {  })
 })
